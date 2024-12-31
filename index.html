@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas at Hogwarts</title>
+    <style>
+        body {
+            background-image: url('https://i.pinimg.com/736x/f9/b0/1a/f9b01afecb5b50a9da733cb6307aa6b3.jpg');
+            background-size: 1000px 1000px;
+            height: 100vh;
+            text-align: center;
+            font-family: Papyrus;
+            overflow: hidden;
+        }
+        img {
+            width: 150px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .snowflake {
+            position: absolute;
+            font-size: 30px;
+            top: -30px;
+            animation: fall linear infinite;
+        }
+        @keyframes fall {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(100vh);
+            }
+        }
+        .snowflake:nth-child(1) {
+            left: 10%;
+            animation-duration: 2s;
+        }
+        .snowflake:nth-child(2) {
+            left: 30%;
+            animation-duration: 5s;
+        }
+        .snowflake:nth-child(3) {
+            left: 50%;
+            animation-duration: 2s;
+        }
+        .snowflake:nth-child(4) {
+            left: 80%;
+            animation-duration: 5s;
+        }
+        .snowflake:nth-child(5) {
+            left: 65%;
+            animation-duration: 6s;
+        }
+        button {
+            background: #f53f07;
+            width: 250px;
+            height: 40px;
+            font-family: Papyrus;
+            font-size: 20px;
+            animation-name: colourChange;
+            animation-duration: 3s;
+            animation-iteration-count: 3;
+        }
+        @keyframes colourChange {
+            from { background: #d61837; }
+            to { background: #40ba27; }
+        }
+    </style>
+</head>
+<body>
+<audio autoplay loop> <source src="https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3" type="audio/mpeg"> Your browser does not support the audio element. </audio>
+    <div class="snowflake">❄️</div>
+    <div class="snowflake">❄️</div>
+    <div class="snowflake">❄️</div>
+    <div class="snowflake">❄️</div>
+    <div class="snowflake">❄️</div>
+    <h1 style="color: #e3530b;">Enjoy a taste of a magical Christmas</h1>
+    <h2 style="color: #e3530b;">Click on Hagrid! </h2>
+    <h3 style="background-color: #e3530b;">'Right, then. First years, this way, please! Come on, now, first years, don't be shy. Come on now, hurry up.'</h3>
+    <p style="position: absolute; bottom: 10px; background-color: #e3530b; font-size: 20px;">Experience the magic of Christmas at Hogwarts, where enchanted snowflakes fall, festive feasts await, and holiday cheer fills every corner of the castle. </p>
+    <img src="https://contentful.harrypotter.com/usf1vwtuqyxm/3PRtyeNm9zPAoB37cpIIT4/cb4cdf0fda5924015afaa27e1722360f/Hagrid_Transparent.png" style="transform: translate(100px, 150px); transition: transform 0.3s ease-in-out;" onmouseover="this.style.transform='translate(130px, 200px) scaleY(-1)';" onmouseout="this.style.transform='translate(130px, 200px)';">
+    <a href="https://www.harrypotter.com/collections/christmas-in-the-wizarding-world/" style="color: #f53f07; font-size: 20px;">
+        <button style="position: relative; top: 150px;">Visit this Christmasy link</button>
+    </a>
+</body>
+</html>
